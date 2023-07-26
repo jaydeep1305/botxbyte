@@ -79,3 +79,30 @@ function run_botxbyte() {
 	$plugin->run();
 }
 run_botxbyte();
+
+
+/**
+ * Appsero
+ */
+
+/**
+ * Initialize the plugin tracker
+ *
+ * @return void
+ */
+function appsero_init_tracker_botxbyte() {
+
+	if ( ! class_exists( 'Appsero\Client' ) ) {
+		require_once __DIR__ . '/appsero/src/Client.php';
+	}
+
+	$client = new Appsero\Client( '81b2ed66-d4e8-4a08-933f-20bca5a3c5b7', 'Botxbyte', __FILE__ );
+
+	// Active insights.
+	$client->insights()->init();
+
+	// Active automatic updater.
+	$client->updater();
+}
+
+appsero_init_tracker_botxbyte();
