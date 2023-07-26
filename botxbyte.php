@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The plugin bootstrap file
  *
@@ -29,6 +28,7 @@
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
+require __DIR__ . '/vendor/autoload.php';
 
 /**
  * Currently plugin version.
@@ -77,6 +77,5 @@ function run_botxbyte() {
 
 	$plugin = new Botxbyte();
 	$plugin->run();
-
 }
 run_botxbyte();

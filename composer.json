@@ -1,0 +1,15 @@
+{
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "require": {
+        "automattic/vipwpcs": "^2.2",
+        "dgoring/dom-query": "^1.0",
+        "appsero/client": "^1.2"
+    }
+}

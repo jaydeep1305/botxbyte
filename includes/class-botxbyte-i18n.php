@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Define the internationalization functionality
  *
@@ -24,7 +23,7 @@
  * @subpackage Botxbyte/includes
  * @author     Jaydeep Gajera <jaydeep@botxbyte.com>
  */
-class Botxbyte_i18n {
+class Botxbyte_I18n {
 
 
 	/**
@@ -39,7 +38,6 @@ class Botxbyte_i18n {
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);
-
 	}
 
 
